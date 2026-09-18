@@ -31,7 +31,7 @@ The design question: **How much friction does this remove from playing Magic?**
 | --- | --- |
 | Discovery | Validate the first playtest, Discord constraints and Forge integration feasibility. |
 | Private-alpha candidate | Four friends import decks, join a private room, play manual Commander and recover from a dropped connection. Explore Discord launch alongside browser access. |
-| Later | Better deck tools, public discovery, community tables, spectating, leagues, replays and personalization. |
+| Later | Better deck tools, [cross-server pod finding](docs/features/CROSS_SERVER_MATCHMAKING.md), community tables, spectating, leagues, replays and personalization. |
 | Conditional | Optional rules-enforced games if engine discovery supports them. A custom engine only if evidence justifies the investment. |
 
 These are planning horizons, not release commitments. There are no delivery dates or active implementation assignments.

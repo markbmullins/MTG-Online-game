@@ -70,6 +70,10 @@ Business logic belongs in application services callable from any transport. Disc
 
 Creating a room is application work. Starting a game crosses into session ownership: validate readiness and immutable deck snapshots, use an idempotent start request and record the resulting session identity. Once a session exists, HTTP endpoints must not mutate live state behind the session queue. Result publication should use a durable idempotent handoff/outbox if it crosses a persistence or service boundary.
 
+## Discord context is not game identity
+
+The [cross-server matchmaking proposal](features/CROSS_SERVER_MATCHMAKING.md) keeps guild, channel, Activity instance, party, match proposal, game session and voice destination distinct. Matchmaking is application work; authenticated seats and viewer authorization belong to the session runtime. Multiple launch contexts may lead to one game, and a new Activity instance must not erase an existing seat. Cross-instance play and voice handoff require a focused platform spike before adoption.
+
 ## Ordering, privacy and delivery
 
 A command is a request. An internal transition is what the driver committed. A viewer update is the authorized representation of that transition. Presence is disposable. None of these is interchangeable with a rules engine's internal “event” during replacement/trigger processing.

@@ -14,6 +14,8 @@ This is a distribution hypothesis to test, not an established acquisition channe
 
 The browser is an independent entry point into the same sessions. Discord should supply its existing voice, chat, roles and community context. Product-specific game permissions and safety remain the application's responsibility.
 
+A later [cross-server matchmaking proposal](features/CROSS_SERVER_MATCHMAKING.md) lets three friends find a fourth player from participating communities. The application owns matching and game sessions; a shared Discord voice destination is arranged explicitly. Validate this with a small partner network before a global queue.
+
 ## Capability map
 
 These are enduring themes, not never-ending epics. GitHub tracks bounded outcomes within them.
