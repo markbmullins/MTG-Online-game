@@ -42,7 +42,7 @@ These are planning horizons, not release commitments. There are no delivery date
 
 [Forge](https://github.com/Card-Forge/forge) is a candidate for a future authoritative engine. An early [discovery epic](https://github.com/markbmullins/MTG-Online-game/issues/1) will test headless four-player play, external choices, private state projections, reconnect, isolation, difficult interactions, maintenance and licensing questions.
 
-Its deliverable is a small end-to-end prototype and an **adopt / reject / conditional-adopt decision**. Forge adoption, a production stack and a custom rules engine are not decided.
+Its deliverable is a small end-to-end prototype and an **adopt / reject / conditional-adopt decision**. React and TypeScript are the chosen application stack. Forge adoption and a custom rules engine are not decided. See the [technical architecture](docs/ARCHITECTURE.md) and [API comparison](docs/decisions/002-application-api.md) for the current recommendations.
 
 ## Deliberate boundaries
 

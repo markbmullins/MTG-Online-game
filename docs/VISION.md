@@ -41,11 +41,11 @@ Before implementation, choose supported environments, identity behavior and the 
 
 Public matchmaking, tournaments, elaborate deck building, monetization and complete rules automation are outside that first hypothesis.
 
-## Architecture hypotheses
+## Architecture direction
 
 One shared game UI can live in browser and Discord shells, with small platform adapters for identity, invitations and environment context. A server owns sessions, commands and viewer-specific state. An engine adapter keeps Forge-specific classes out of the public protocol.
 
-React, WebSocket, Java/Forge and an optional separate API service are prototype possibilities, not accepted production choices. The Forge spike may use React and WebSocket to demonstrate the proposed sequence without committing the application to that stack.
+React and TypeScript are the owner-selected application stack; see [ADR-001](decisions/001-react-typescript.md). The [technical architecture](ARCHITECTURE.md) recommends Node.js application services, a stateful engine-driver boundary and an explicit WebSocket game protocol. [ADR-002](decisions/002-application-api.md) proposes tRPC for the first-party HTTP API. Specific libraries, deployment topology and Forge adoption remain open. A Java engine is compatible with the chosen application stack.
 
 Manual mode should not require Forge. Optional assistance must state its limits. An enforced mode may have different correction, unsupported-card and house-rule behavior. Do not assume that a rules engine can safely resume after arbitrary manual edits.
 

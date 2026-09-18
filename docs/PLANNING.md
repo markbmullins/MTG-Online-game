@@ -39,7 +39,7 @@ Native parent links provide the epic drill-down. Child order is a suggested read
 
 ## Resume with one question
 
-1. Read the README and vision. Reconfirm the first audience and playtest boundary.
+1. Read the README, vision and [technical architecture](ARCHITECTURE.md), including accepted versus proposed ADRs. Reconfirm the first audience and playtest boundary.
 2. Choose a small discovery ticket, such as headless Forge initialization or Discord Activity constraints. Check native prerequisites.
 3. Recheck current upstream documentation and record assumptions. Split work that cannot fit one focused implementation/review cycle.
 4. Refine acceptance criteria, exclusions, verification and the expected evidence. Resolve material decisions for dependent implementation.
