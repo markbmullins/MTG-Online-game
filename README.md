@@ -40,7 +40,7 @@ These are planning horizons, not release commitments. There are no delivery date
 
 **Manual play**, **rules assistance** and **rules enforcement** are different experiences. Helpful counters, reminders and shortcuts can improve the table without claiming to know every legal action.
 
-[Forge](https://github.com/Card-Forge/forge) is a candidate for a future authoritative engine. An early discovery epic will test headless four-player play, external choices, private state projections, reconnect, isolation, difficult interactions, maintenance and licensing questions.
+[Forge](https://github.com/Card-Forge/forge) is a candidate for a future authoritative engine. An early [discovery epic](https://github.com/markbmullins/MTG-Online-game/issues/1) will test headless four-player play, external choices, private state projections, reconnect, isolation, difficult interactions, maintenance and licensing questions.
 
 Its deliverable is a small end-to-end prototype and an **adopt / reject / conditional-adopt decision**. Forge adoption, a production stack and a custom rules engine are not decided.
 
@@ -52,7 +52,7 @@ This repository currently contains planning documents only. There is nothing to 
 
 ## Pick this up later
 
-Start with [the vision](docs/VISION.md), then [the planning guide](docs/PLANNING.md). Select one discovery question, refine its issue and collect evidence before committing to architecture. GitHub Issues holds planned work; the Project makes it browsable.
+Read [the vision](docs/VISION.md) and [the planning guide](docs/PLANNING.md). Then [choose the first playtest boundary](https://github.com/markbmullins/MTG-Online-game/issues/52) or refine one discovery question. Collect evidence before committing to architecture. GitHub Issues holds planned work; the Project makes it browsable.
 
 ---
 

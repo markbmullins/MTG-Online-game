@@ -28,7 +28,7 @@ Horizon expresses intent, not activity. The Project's built-in Status is not an 
 
 ## Browse the backlog
 
-Use Project Theme/Horizon fields to filter the portfolio. Useful issue searches:
+The Project has saved views for **All ideas**, **Epics**, **Discovery**, **Alpha candidates** and **Later & conditional**, with Theme, Horizon and native hierarchy columns. Useful issue searches:
 
 - [Epics](https://github.com/markbmullins/MTG-Online-game/issues?q=is%3Aissue%20is%3Aopen%20label%3Akind%3Aepic)
 - [Discovery spikes](https://github.com/markbmullins/MTG-Online-game/issues?q=is%3Aissue%20is%3Aopen%20label%3Akind%3Aspike)
@@ -60,4 +60,4 @@ Review the backlog when returning to the project. No recurring maintenance proce
 
 ## Platform references
 
-Native relationships follow [GitHub sub-issues](https://docs.github.com/en/rest/issues/sub-issues) and [issue dependencies](https://docs.github.com/en/rest/issues/issue-dependencies). The documented [Project view creation API](https://docs.github.com/en/rest/projects/views) targets organization-owned projects; custom personal-project views can be arranged in GitHub's UI. These capabilities were checked during setup on 2026-09-18 UTC.
+Native relationships follow [GitHub sub-issues](https://docs.github.com/en/rest/issues/sub-issues) and [issue dependencies](https://docs.github.com/en/rest/issues/issue-dependencies). The [REST Project view creation API](https://docs.github.com/en/rest/projects/views) targets organization-owned projects. This personal Project uses GitHub's GraphQL view mutations, verified against the live schema during setup on 2026-09-18 UTC.
