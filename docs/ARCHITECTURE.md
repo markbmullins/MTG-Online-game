@@ -122,4 +122,4 @@ Domain logic should not depend on React, tRPC, database clients or socket librar
 
 ## Next decisions and evidence
 
-GitHub issues remain the work authority. Refine the engine-driver contract and application API decision, and extend existing protocol, recovery, UI and Forge tickets with the specific failure cases above. Preserve custom-engine semantics as [conditional research](TECHNICAL_REVIEW.md), not a prerequisite for manual Commander. No implementation is authorized by this document.
+GitHub issues remain the work authority. The next candidates are the [HTTP API decision](https://github.com/markbmullins/MTG-Online-game/issues/53), [game-driver contract](https://github.com/markbmullins/MTG-Online-game/issues/54) and [performance baseline](https://github.com/markbmullins/MTG-Online-game/issues/55). Existing protocol, recovery, UI and Forge tickets include the specific failure cases above. Preserve custom-engine semantics as [conditional research](TECHNICAL_REVIEW.md), not a prerequisite for manual Commander. No implementation is authorized by this document.

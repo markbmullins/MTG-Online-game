@@ -12,7 +12,7 @@ Reviewed 2026-09-18. This is a curated record of useful reasoning and correction
 | Framework-independent reducer as the universal engine interface | Keep reducers as an option inside the manual/TS driver. Replace the universal constraint with a stateful engine boundary. |
 | One actor/owner per game | Keep. Add a real serial queue, bounded work and ownership fencing when failover exists. The sample `async handle` alone is not an actor. |
 | Redis stores live state from day one | Defer. Resident ownership plus explicit durable recovery can start without Redis. A cache or Pub/Sub channel does not supply recovery guarantees. |
-| Snapshot + event log yields replays “for free” | Correct. Playback, privacy, compatibility, engine restoration and undo are separate problems. |
+| Snapshot + event log yields replays “for free” | Overstated. Playback, privacy, compatibility, engine restoration and undo are separate problems. |
 | Global revision mismatch for every command | Refine. Separate view delivery cursors from semantic preconditions; validate commands against current authority. |
 | TS is definitely fast enough; hundreds of games per process | Treat as unmeasured hypotheses. Use workload benchmarks, tail latency and event-loop/resource measurements. |
 | Stable hidden-card IDs | Unsafe as a blanket rule. Avoid tracking secrets through randomized or concealed zones. |
